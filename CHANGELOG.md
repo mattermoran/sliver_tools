@@ -1,3 +1,7 @@
+# 0.2.7
+
+Added `getScrollableSize` property to [SliverPinnedHeader].
+
 # 0.2.8
 
 - Fixed #56 by accounting for maxScrollObstructionExtent with thanks to @manu-sncf

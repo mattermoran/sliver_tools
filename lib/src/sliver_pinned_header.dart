@@ -7,10 +7,13 @@ class SliverPinnedHeader extends SingleChildRenderObjectWidget {
   const SliverPinnedHeader({
     Key? key,
     required Widget child,
+    this.getScrollableSize,
   }) : super(key: key, child: child);
+
+  final double Function(double childSize)? getScrollableSize;
 
   @override
   RenderSliverPinnedHeader createRenderObject(BuildContext context) {
-    return RenderSliverPinnedHeader();
+    return RenderSliverPinnedHeader(getScrollableSize: getScrollableSize);
   }
 }
